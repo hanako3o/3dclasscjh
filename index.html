@@ -1,20 +1,80 @@
-hello MyFriend
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>My 3D Demo</title>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #2b2b45);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 50px 20px;
+  }
+
+  h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  .subtitle {
+    color: #aaa;
+    margin-bottom: 40px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: auto;
+  }
+
+  a {
+    text-decoration: none;
+    background: #4a90e2;
+    padding: 15px;
+    border-radius: 12px;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+  }
+
+  a:hover {
+    background: #357abd;
+    transform: scale(1.05);
+  }
+
+  hr {
+    margin: 40px auto;
+    width: 60%;
+    border: 0;
+    border-top: 1px solid #555;
+  }
+</style>
+</head>
+
+<body>
+
+<h1>👋 Hello My Friend</h1>
+<div class="subtitle">3D Viewer Demo Collection</div>
+
 <hr/>
-<a href="sketchfab.html">SketchFab Example</a> <br/>
 
-<p>
-<a href="0.babylonViewer Basic.html">Babylon Viewer Basic</a>
-</p>
+<div class="container">
+  <a href="sketchfab.html">🎨 Sketchfab Example</a>
+  <a href="0.babylonViewer Basic.html">📦 Babylon Viewer Basic</a>
+  <a href="1.babylonViewer Select.html">🖱️ Babylon Viewer Select</a>
+  <a href="2.babylonViewer Navbar.html">📑 Babylon Viewer Navbar</a>
+</div>
 
-<p>
-<a href="1.babylonViewer Select.html">Babylon Viewer Select</a>
-</p>
-
-<a href="2.babylonViewer Navbar.html">Babylon Viewer Navbar</a>
 <hr/>
+
 <!--
-<p>
 <a href="./webAR">WebAR 範例</a>
-</p>
 -->
 
+</body>
+</html>
