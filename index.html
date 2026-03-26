@@ -5,12 +5,17 @@
 <title>3D數位內容與應用</title>
 
 <style>
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+
   body {
     font-family: "Segoe UI", Arial, sans-serif;
     background: linear-gradient(120deg, #1a1a2e, #16213e, #0f3460);
     color: white;
-    margin: 0;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
   }
 
   .header {
@@ -45,6 +50,7 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 20px;
+    flex: 1; /* 撐滿中間空間 */
   }
 
   .card {
