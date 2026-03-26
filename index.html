@@ -2,79 +2,124 @@
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
-<title>My 3D Demo</title>
+<title>3D數位內容與應用</title>
 
 <style>
   body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #1e1e2f, #2b2b45);
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(120deg, #1a1a2e, #16213e, #0f3460);
     color: white;
-    text-align: center;
     margin: 0;
-    padding: 50px 20px;
+    padding: 0;
   }
 
-  h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
+  .header {
+    text-align: center;
+    padding: 60px 20px 30px;
   }
 
-  .subtitle {
-    color: #aaa;
-    margin-bottom: 40px;
+  .header h1 {
+    font-size: 42px;
+    margin: 0;
+    letter-spacing: 2px;
   }
 
-  .container {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 400px;
-    margin: auto;
-  }
-
-  a {
-    text-decoration: none;
-    background: #4a90e2;
-    padding: 15px;
-    border-radius: 12px;
-    color: white;
+  .header p {
+    margin-top: 10px;
+    color: #cfcfcf;
     font-size: 18px;
-    transition: 0.3s;
-  }
-
-  a:hover {
-    background: #357abd;
-    transform: scale(1.05);
   }
 
   hr {
-    margin: 40px auto;
-    width: 60%;
-    border: 0;
-    border-top: 1px solid #555;
+    width: 70%;
+    margin: 30px auto;
+    border: none;
+    border-top: 1px solid rgba(255,255,255,0.2);
+  }
+
+  .container {
+    max-width: 800px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .card {
+    background: rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 25px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    transition: 0.3s;
+  }
+
+  .card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.5);
+  }
+
+  .card a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  footer {
+    text-align: center;
+    color: #aaa;
+    padding: 20px;
+    font-size: 14px;
   }
 </style>
 </head>
 
 <body>
 
-<h1>👋 Hello My Friend</h1>
-<div class="subtitle">3D Viewer Demo Collection</div>
-
-<hr/>
-
-<div class="container">
-  <a href="sketchfab.html">🎨 Sketchfab Example</a>
-  <a href="0.babylonViewer Basic.html">📦 Babylon Viewer Basic</a>
-  <a href="1.babylonViewer Select.html">🖱️ Babylon Viewer Select</a>
-  <a href="2.babylonViewer Navbar.html">📑 Babylon Viewer Navbar</a>
+<div class="header">
+  <h1>3D數位內容與應用</h1>
+  <p>113213074 - 陳龍華</p>
 </div>
 
 <hr/>
 
-<!--
-<a href="./webAR">WebAR 範例</a>
--->
+<div class="container">
+
+  <div class="card">
+    <div class="icon">🎨</div>
+    <a href="sketchfab.html">Sketchfab 展示</a>
+  </div>
+
+  <div class="card">
+    <div class="icon">📦</div>
+    <a href="0.babylonViewer Basic.html">Babylon 基礎</a>
+  </div>
+
+  <div class="card">
+    <div class="icon">🖱️</div>
+    <a href="1.babylonViewer Select.html">Babylon 選取功能</a>
+  </div>
+
+  <div class="card">
+    <div class="icon">📑</div>
+    <a href="2.babylonViewer Navbar.html">Babylon 導覽列</a>
+  </div>
+
+</div>
+
+<hr/>
+
+<footer>
+  © 2026 3D Demo Project
+</footer>
 
 </body>
 </html>
