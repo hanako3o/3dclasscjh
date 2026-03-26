@@ -25,9 +25,10 @@
   }
 
   .header p {
-    margin-top: 10px;
+    margin-top: 12px;
     color: #cfcfcf;
-    font-size: 18px;
+    font-size: 22px;
+    font-weight: 500;
   }
 
   hr {
@@ -38,15 +39,16 @@
   }
 
   .container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 20px;
   }
 
   .card {
+    display: block;
     background: rgba(255,255,255,0.08);
     border-radius: 16px;
     padding: 25px;
@@ -54,16 +56,16 @@
     backdrop-filter: blur(10px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
     transition: 0.3s;
+    text-decoration: none;
+    color: white;
   }
 
   .card:hover {
-    transform: translateY(-8px) scale(1.02);
+    transform: translateY(-8px) scale(1.05);
     box-shadow: 0 12px 25px rgba(0,0,0,0.5);
   }
 
-  .card a {
-    text-decoration: none;
-    color: white;
+  .card .title {
     font-size: 18px;
     font-weight: bold;
   }
@@ -93,25 +95,25 @@
 
 <div class="container">
 
-  <div class="card">
+  <a class="card" href="sketchfab.html">
     <div class="icon">🎨</div>
-    <a href="sketchfab.html">Sketchfab 展示</a>
-  </div>
+    <div class="title">Sketchfab 展示</div>
+  </a>
 
-  <div class="card">
+  <a class="card" href="0.babylonViewer Basic.html">
     <div class="icon">📦</div>
-    <a href="0.babylonViewer Basic.html">Babylon 基礎</a>
-  </div>
+    <div class="title">Babylon 基礎</div>
+  </a>
 
-  <div class="card">
+  <a class="card" href="1.babylonViewer Select.html">
     <div class="icon">🖱️</div>
-    <a href="1.babylonViewer Select.html">Babylon 選取功能</a>
-  </div>
+    <div class="title">Babylon 選取功能</div>
+  </a>
 
-  <div class="card">
+  <a class="card" href="2.babylonViewer Navbar.html">
     <div class="icon">📑</div>
-    <a href="2.babylonViewer Navbar.html">Babylon 導覽列</a>
-  </div>
+    <div class="title">Babylon 導覽列</div>
+  </a>
 
 </div>
 
